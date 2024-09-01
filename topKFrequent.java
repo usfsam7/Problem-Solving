@@ -52,22 +52,15 @@ public class topKFrequent {
      
         Hashtable<Integer, Long> countsTable = new Hashtable<>();   
 
-        
-
-
         for (int i = 0; i < nums.length; i++) {
                  
              int target = nums[i];
-
              long count = Arrays.stream(nums).filter(num -> num == target).count();
-
              countsTable.put(target, count);
 
          }
         
-     
-
-
+    
         List<Map.Entry<Integer, Long>> entries = new ArrayList<>(countsTable.entrySet());
 
         Collections.sort(entries, new Comparator<Map.Entry<Integer, Long>>() {
@@ -92,4 +85,4 @@ public class topKFrequent {
       return topKs;
 
     }
-}
+  }
