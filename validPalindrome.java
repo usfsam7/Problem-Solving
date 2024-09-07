@@ -55,7 +55,7 @@
 
                           for (int i = 0; i < newStr.length(); i++) {
             
-                               // check if the forward chars == backward chars.
+                               // check if the forward chars == backward chars or not.
                                   if (newStr.charAt(i) != newStr.charAt(newStr.length() - i -1)) {
                                       return false;
                                   }
