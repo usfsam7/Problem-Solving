@@ -13,11 +13,13 @@
     Input: s = "A man, a plan, a canal: Panama"
     Output: true
     Explanation: "amanaplanacanalpanama" is a palindrome.
+
     Example 2:
 
     Input: s = "race a car"
     Output: false
     Explanation: "raceacar" is not a palindrome.
+
     Example 3:
 
     Input: s = " "
@@ -38,20 +40,22 @@
       
                public static void main(String[] args) {
 
-                String s = "A man, a plan, a canal: Panama";
-                boolean result = isPalindrome(s);
-                System.out.println(result);
+                   String s = "A man, a plan, a canal: Panama";
+                   boolean result = isPalindrome(s);
+                   System.out.println(result);
                 
                }
 
 
             
                 public static boolean isPalindrome(String s) {
-            
+        
+                      // removing all non-alphanumeric characters.
                        String newStr = s.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
-                        
+
                           for (int i = 0; i < newStr.length(); i++) {
             
+                               // check if the forward chars == backward chars.
                                   if (newStr.charAt(i) != newStr.charAt(newStr.length() - i -1)) {
                                       return false;
                                   }
