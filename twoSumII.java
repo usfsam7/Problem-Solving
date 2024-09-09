@@ -68,3 +68,38 @@ public class twoSumII {
                return new int[] {};
         }
 }
+
+
+
+/*
+ * diff syntax
+ * 
+ * 
+ * class Solution {
+    public int[] twoSum(int[] numbers, int target) {
+
+           int index1 = 0;
+           int index2 = 0;
+
+           for (int i = 0; i < numbers.length - 1; i++) {
+            for (int j = i + 1; j < numbers.length; j++) {
+
+                int targetToCompare = numbers[i] + numbers[j];
+
+                  
+                  if (targetToCompare == target) {
+
+                       index1 = i + 1;
+                       index2 = j + 1;
+                  }
+             }
+           }
+
+
+
+
+   
+        return new int[] {index1, index2};
+    }
+  }
+ */
