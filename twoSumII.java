@@ -95,10 +95,6 @@ public class twoSumII {
              }
            }
 
-
-
-
-   
         return new int[] {index1, index2};
     }
   }
