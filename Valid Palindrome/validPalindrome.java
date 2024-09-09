@@ -59,9 +59,7 @@
                                   if (newStr.charAt(i) != newStr.charAt(newStr.length() - i -1)) {
                                       return false;
                                   }
-                          }
-                        
+                          }       
                     return true;
                 }
-            
       }
